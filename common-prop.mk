@@ -221,6 +221,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.predict_hwc_composition_strategy=0 \
     ro.surface_flinger.enable_frame_rate_override=false
 
 # USB
