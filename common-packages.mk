@@ -67,9 +67,17 @@ PRODUCT_PACKAGES += \
 
 # IMS (OSS)
 PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     telephony-ext \
     ims-ext-common \
-    ims_ext_common.xml
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils-prd \
+    qti_telephony_utils_prd.xml
 
 # Media
 PRODUCT_PACKAGES += \
