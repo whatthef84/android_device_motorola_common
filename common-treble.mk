@@ -71,9 +71,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 
 # Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+ifeq ($(PRODUCT_USES_MTK_HARDWARE),true)
+  PRODUCT_PACKAGES += \
+      android.hardware.health@2.1-impl \
+      android.hardware.health@2.1-service
+endif
 
 # Lights HAL
 PRODUCT_PACKAGES += \
@@ -172,6 +174,6 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi-service \
     wpa_supplicant \
     hostapd
